@@ -1,17 +1,19 @@
-import soniaQR from "./images/sonia-github-qr.png";
+import soniaQR from "./images/sonia-github-qr-code.png";
+import "./main.css";
 
 function App() {
   return (
-    <div className="qr-div">
-      <div className="qr-image-div">
-        <img src={soniaQR} alt="Sonia github QR" />
-        <div className="text-container">
-          <p>
-            Scan the QR code to visit Sonia&apos;s Github and check out her
-            projects
-          </p>
-        </div>
+    <div className="qr-card">
+      <div className="qr-image-container">
+        {/* <img src={soniaQR} alt="Sonia github QR" className="qr-code" /> */}
+        <img src={soniaQR} alt="Sonia github QR" className="qr-code" />
+      </div>
+      <div className="text-container">
         <h1>Sonia is a fullstack web developer</h1>
+        <p>
+          Scan the QR code to visit Sonia&apos;s Github and check out her
+          projects
+        </p>
       </div>
     </div>
   );
