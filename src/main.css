@@ -10,6 +10,12 @@ body {
   margin: auto;
 }
 
+#title {
+  font-family: "Outfit", sans-serif;
+  font-size: 3rem;
+  color: rgb(23, 23, 119);
+}
+
 h1 {
   font-family: "Outfit", sans-serif;
   font-size: 1.5rem;
