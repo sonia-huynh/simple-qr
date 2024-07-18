@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import soniaQR from "../images/sonia-github-qr-code.png";
 import "../main.css";
+import { motion } from "framer-motion";
 
 function QrCode() {
   const [click, setClick] = useState(false);
@@ -16,18 +17,19 @@ function QrCode() {
       </h1>
       {!click && (
         <div className="button-container">
-          <button
+          <motion.button
+            whileHover={{ scale: 1.1 }}
             data-testid="qr-code-button"
             onClick={handleClick}
             className="qr-button"
           >
             Click me to get the QR Code!
-          </button>
+          </motion.button>
         </div>
       )}
 
       {click && (
-        <div className="qr-card">
+        <motion.div whileHover={{ scale: 1.1 }} className="qr-card">
           <div className="qr-image-container">
             <img src={soniaQR} alt="Sonia github QR" className="qr-code" />
           </div>
@@ -38,7 +40,7 @@ function QrCode() {
               projects
             </p>
           </div>
-        </div>
+        </motion.div>
       )}
     </>
   );
