@@ -7,7 +7,7 @@ To practice my frontend CSS styling I completed the [QR Code Component Challenge
 
 I was provided with a design file as seen in the picture above and I tweaked the challenge a bit by creating my own QR code that links to my github page.
 
-I will also practice my React testing on this app.
+I also practiced my React testing on this app.
 
 
 Feel free to checkout my deployed QR code app [here](https://sonia-github-qr-code.vercel.app/)
